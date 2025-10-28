@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HealthyHotMeal — Log meals, track heart-rate & improve</title>
+  <meta name="description" content="Personalized meal tracking, heart-rate sync, daily micro-habits. Start free."/>
+  <meta name="theme-color" content="#0ea5a4"/>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand"><div class="logo">HH</div><div><h1>HealthyHotMeal</h1><small>Meals • Heart-rate • Lifestyle</small></div></div>
+      <nav class="nav"><a href="#how">How</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a class="btn" href="#signup">Start free</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Log your meals. Track your heart. Build better habits.</h2>
+        <p>Personalized daily plans, micro-habits, and simple analytics to help you improve in 30 days.</p>
+        <div class="cta-row">
+          <a class="btn large" href="#signup">Start free</a>
+          <a class="btn ghost" href="#features">Learn more</a>
+        </div>
+        <p class="muted">Join 12,000+ users • Rated 4.7/5</p>
+      </div>
+      <div class="hero-right">
+        <img src="/assets/hero-screenshot.png" alt="App screenshot" />
+      </div>
+    </section>
+
+    <section id="how" class="card">
+      <h3>How it works — 3 simple steps</h3>
+      <div class="grid-3">
+        <article><h4>1. Log</h4><p>Quick add meals (manual, barcode demo, or camera quick-add).</p></article>
+        <article><h4>2. Analyse</h4><p>Calories, macros, resting heart-rate & trends.</p></article>
+        <article><h4>3. Improve</h4><p>AI suggestions, daily micro-habits, streaks & badges.</p></article>
+      </div>
+    </section>
+
+    <section id="features" class="grid-2">
+      <div class="card">
+        <h3>Core features</h3>
+        <ul>
+          <li>Meal logging — manual & barcode demo</li>
+          <li>Heart-rate ingestion — BLE demo + manual fallback</li>
+          <li>Daily check-in, streaks, badges</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Integrations & Privacy</h3>
+        <ul>
+          <li>Google Fit & Apple Health adapters (server-side)</li>
+          <li>Privacy-first analytics + opt-out</li>
+          <li>Stripe for subscriptions (server required)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pricing" class="card">
+      <h3>Pricing</h3>
+      <div class="grid-3">
+        <div class="plan">
+          <h4>Free</h4>
+          <p>Basic tracking, manual HR, daily check-in, ads</p>
+        </div>
+        <div class="plan featured">
+          <h4>Premium</h4>
+          <p>$4.99/mo — No ads, export, advanced analytics</p>
+        </div>
+        <div class="plan">
+          <h4>Teams</h4>
+          <p>Contact us for clinic or coach plans</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="card">
+      <h3>Get early access — it's free</h3>
+      <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="signup" />
+        <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+        <div class="form-row">
+          <input name="email" type="email" placeholder="Your email" required />
+          <button type="submit" class="btn">Get access</button>
+        </div>
+        <p class="muted">No spam. Unsubscribe anytime.</p>
+      </form>
+    </section>
+
+    <section class="card ad">
+      <!-- ADSENSE_PLACEHOLDER -->
+      <div class="ad-inner">Ad placeholder — replace with AdSense snippet for Free users.</div>
+    </section>
+
+    <section class="card testimonials">
+      <h3>What early users say</h3>
+      <div class="grid-3">
+        <blockquote>
+          <p>"I finally stayed consistent — the daily check-in is brilliant."</p>
+          <cite>— Sara, 28</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Syncing my HR helped me notice resting heart-rate changes."</p>
+          <cite>— Omar, 35</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Simple, evidence-driven insights that patients actually follow."</p>
+          <cite>— Dr. Lina</cite>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© <span id="year"></span> HealthyHotMeal</div>
+      <div class="links"><a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
